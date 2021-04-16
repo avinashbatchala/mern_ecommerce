@@ -8,15 +8,17 @@ app.get('/', (req, res) => {
     return res.send('HI AVINASH')
 })
 
+app.get('/signout', (req, res) => {
+    return res.send('You are signed out')
+})
+
+app.get('/avinash', (req, res) => {
+    return res.send('You are visiting Avinash site')
+})
+
+app.get('/signup', (req, res) => {
+    return res.send('You are signed up')
+})
 app.listen(port, () => {
     console.log("Server is running at port", port)
 })
-// const port = 3000
-
-// app.get('/', (req, res) => {
-//   res.send('Hello World!')
-// })
-
-// app.listen(port, () => {
-//   console.log(`Example app listening at http://localhost:${port}`)
-// })
